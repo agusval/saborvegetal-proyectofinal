@@ -1,0 +1,44 @@
+
+/*------------------PRODUCTOS----------------*/
+@import "mixinsizes";
+
+.bgi-productos{
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(../assets/productos-fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.titulo{
+    text-transform:map-get($estilostexto, mayus);
+    font-size:25px;
+    @extend .textoextend;
+    text-align: center;
+    padding:10px;
+}
+.productosDiv{
+    display: flex;
+    justify-content: space-evenly;
+    font-size:20px;
+    overflow: hidden;
+    @extend .textoextend;
+    background: rgba(255,255,255,0.7);
+    p{
+        font-size:17px;
+        text-align: justify;
+        margin-bottom: 35px;
+        @include tamaños(600px, 300px);
+    }
+}
+
+.productosImagenes{
+    &:hover{
+        box-shadow: 3px 10px 15px rgba(0,0,0,0.5);
+        transition: all 500ms ease;
+    }
+}
+
+span{
+    text-transform:map-get($estilostexto, mayus);
+} 

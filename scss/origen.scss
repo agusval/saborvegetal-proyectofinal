@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@708&display=swap');
+@import "variables";
+@import "footer";
+@import "extends";
+@import "mixinsizes";
+
+//PAGINAS PRINCIPALES
+@import "pageindex";
+@import "pagenosotros";
+@import "pageproductos";
+@import "pagecontacto";
+
+
+//GRID PRINCIPAL
+@import "grid";
+
+
+//ANIMACIONES
+@import "animaciones";
+
+
+//RESPONSIVE
+@import "responsive";
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none;
+    h2{
+        font-size: 15px !important;
+        color: black !important;
+    }
+}
+
+body{
+    width:100%;
+    height: 100vh;
+}
+header{
+    display:flex;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, $mainyellow 15%, $maingreen 54%);
+    font-family: 'Open Sans', sans-serif;
+    font-weight:bold;   
+    grid-area: gridhead;
+    align-items: center;
+
+}
+.logoHeader{
+    margin-left: 50px;
+    margin-bottom: 5px;
+    img{
+        max-width: 140px;
+    }
+}
+
+.tituloHeader{
+    text-transform:map-get($estilostexto, mayus);
+    color:white;
+    text-shadow:0.05em 0.10em rgb(82, 110, 2);
+    font-size: 26px;
+    margin: 50px auto;
+}
+#checkMenu{
+    display:none;
+}   
+.menuImg{
+    display:none;
+}
+.navMenu{
+    grid-area: menu;
+    display:flex;
+    justify-content: space-evenly;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, $mainyellow 15%, $maingreen 54%);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px !important;
+    width:100%;
+    transition: transform .2s;
+    margin-bottom: 0px;
+}
+ol, ul {
+    padding-left: 2rem;
+}

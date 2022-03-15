@@ -1,0 +1,24 @@
+
+/*-----------------NOSOTROS--------------*/
+.nosotrosDiv{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(252,169,8,0.4)),url(../assets/alimentacion-consciente.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    height: 80vh;
+}
+.nosotrosTexto{
+    padding: 20px 0px;
+    p{
+        padding: 10px;
+        font-size:15px;
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        width: 700px; 
+        background:rgba(0,0,0,0.3);
+        margin:50px auto;
+        line-height : 20px;
+        z-index: 1;
+    }
+}  

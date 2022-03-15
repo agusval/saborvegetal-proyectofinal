@@ -1,0 +1,47 @@
+
+
+/*-------------------ENVIOS------------------*/
+.zonaReparto{
+    list-style: none;
+}
+.mainEnvio{
+    background: linear-gradient(rgba(103,139,3,0.5),rgba(252,169,8,0.5)), url(../assets/fondo-contacto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pedidosWapp{
+    background:rgba(0,0,0,0.3);
+    font-size:15px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform:uppercase;
+    color:white;
+    text-align: center;
+    min-width: 100%;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    a{
+        img{
+            width:5%;
+            margin:20px;
+            margin-bottom: 70px;
+        }
+    }
+}
+
+.enviosDiv{
+    font-size:15px;
+    font-family: 'Open Sans', sans-serif;
+    color:white;
+    text-align: center;
+    padding: 5px 20px;
+    height: 500px;
+}
+
+.parrafoEnvio{
+    text-transform: uppercase;
+    background:rgba(0,0,0,0.3);
+    width: 650px;
+    margin:auto;
+}

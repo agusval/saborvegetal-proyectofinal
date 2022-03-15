@@ -1,0 +1,20 @@
+/*--------------INICIO GRID---------------*/
+.bodygrid{
+    display: grid;
+    grid-template-areas: 
+    "gridhead     gridhead     gridhead"
+    "menu         menu         menu "
+    "gridprin     gridprin     gridprin"
+    "gridredes    gridredes    gridredes"
+    "gridfooter   gridfooter   gridfooter"
+    ;
+}
+.gridProductos{
+    display: grid;
+    grid-template-columns:2fr 2fr;
+    grid-template-rows: 280px 280px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    padding:20px;
+}
+/*--------------- FIN GRID----------------*/

@@ -1,0 +1,225 @@
+@import "variables";
+/*-----------------------animaciones generales-------------------*/
+.navMenu{
+    li{
+        a{
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            text-decoration: none;
+            &:link{
+                color:white;
+            }
+            &:visited{
+                color: white;
+            }
+            &:before, &:after{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 2px;
+                background: white;
+                transition: left .6s;
+            }
+            &:hover:before{
+                left: 0;
+            }
+            &:after{
+                top: auto;
+                bottom: 0;
+                left: auto;
+                right: -100%;
+                background: white;
+                transition: right .6s;
+            }
+            &:hover:after{
+                right: 0;
+            }
+        }      
+    }
+}      
+
+.animatedLogo{
+    animation-name: logoanimado;
+    animation-duration: .7s;
+    animation-delay: .2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes logoanimado{
+    0%{
+        filter:blur(100px);
+        transform:scale(0.1,0.1);
+    }
+    100%{
+        filter:none;
+        transform:scale(1,1);
+        opacity: 1;
+    }
+}
+.animatedTitle{
+    animation-name: tituloanimado;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes tituloanimado{
+    0%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.animatedMenu{
+    animation-name: menuanimado;
+    animation-duration: .8s;
+    animation-delay: 0.9s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes menuanimado{
+    0%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.textoPrincipal{
+    animation-name: textoindex;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes textoindex{
+    0%{
+        opacity: 0;
+        transform: scale(1.2,1.2);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1,1);
+    }
+}
+
+.nosotrosImagen{
+    animation-name: nosimagenanimada;
+    animation-duration: 2.5s;
+}
+@keyframes nosimagenanimada{
+    0%{
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.nosotrosTexto{
+    animation-name: nostextoanimado;
+    animation-duration: 2.2s;
+}
+
+@keyframes nostextoanimado{
+    0%{
+        opacity: 0.1;
+        transform: translateX(200px);
+    }
+    100%{
+        opacity: 1;
+        transform:translateX(0px);
+    }
+}
+
+/*------productos animados------*/
+
+.animatedTitleProd{
+    animation-name: tituloproductos;
+    animation-duration: 2s;
+}
+
+@keyframes tituloproductos{
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.animatedProductos{
+    animation-name:productosanimados;
+    animation-duration: 2s;
+}
+
+@keyframes productosanimados{
+    0%{
+        opacity:0;
+        transform:translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform:translateY(0px);
+    }
+}
+
+/*---envios animado---*/
+.animatedEnvio{
+    animation-name: envioanimado;
+    animation-duration: 2s;
+    animation-delay: 0.3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes envioanimado{
+    0%{
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.whatsappAnimated{
+    animation-name: whatsappanimado;
+    animation-duration: 2s;
+}
+@keyframes whatsappanimado{
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/*redes animadas - colores*/
+
+/*MAPS CON EACH--------****************/
+$coloresredes:(
+    ig: invert(24%) sepia(96%) saturate(3133%) hue-rotate(326deg) brightness(96%) contrast(83%),
+    face: invert(28%) sepia(13%) saturate(4085%) hue-rotate(131deg) brightness(91%) contrast(94%),
+    wapp: invert(28%) sepia(13%) saturate(4085%) hue-rotate(131deg) brightness(91%) contrast(94%),
+);
+
+@each $name-red, $hover-color in $coloresredes{
+    .#{$name-red}Icon:hover{
+        filter:$hover-color;
+    }
+}
+
+/* fin redes animadas - colores*/
+
+
+/*------------------fin animaciones generales--------------*/

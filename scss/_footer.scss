@@ -1,0 +1,22 @@
+@import "variables";
+/*-------------------FOOTER-----------------*/
+.redes{
+    background-color:$mainyellow;
+    text-transform:map-get($estilostexto, mayus) !important;
+    text-align:center;
+    font-family: 'Open Sans', sans-serif;
+    padding:15px;
+    grid-area: gridredes;
+    font-size:15px !important;
+}
+.iconosRedes{
+    width:2%;
+    margin:15px;
+}
+footer{
+    background-color:$mainyellow;
+    text-align:center;
+    font-family: 'Open Sans', sans-serif;
+    font-size:12px;
+    grid-area: gridfooter;
+}

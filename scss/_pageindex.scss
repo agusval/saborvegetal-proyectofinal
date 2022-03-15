@@ -1,0 +1,19 @@
+/*---------------INICIO INDEX----------------*/
+
+main{
+    grid-area: gridprin;
+}
+#carouselExampleControls .carousel-item img{
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    height: 60vh;
+}
+.textoPrincipal{
+    font-size:17px;
+    font-family: 'Open Sans', sans-serif;
+    width:800px;
+    margin:30px 550px;
+    text-align: center;
+    color:rgb(2, 0, 2);
+}
